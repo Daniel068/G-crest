@@ -1,10 +1,15 @@
 import React from 'react';
 import {View, KeyboardAvoidingView, Text, Pressable, ScrollView, StyleSheet } from 'react-native'
 import style from './style(O)';
-import Icon from "react-native-vector-icons/Ionicons"
+import Icon from "react-native-vector-icons/Ionicons";
+import Login from '../Login/Login';
 
 
-function OnboardingScreen () {
+
+function OnboardingScreen ({navigation}) {
+    function gotoLogin (){
+        navigation.navigate('Login');
+    }
     return(
         <KeyboardAvoidingView style = {style.mainView}>
 
@@ -14,7 +19,7 @@ function OnboardingScreen () {
                     Healthy <Text style ={{color:"#6EC756"}}>food</Text> and <Text style ={{color:"#6EC756"}}>drinks</Text> at your finger tips
                 </Text>
                 
-                <Pressable style = {style.button}>
+                <Pressable onPress={gotoLogin} style = {style.button}>
                     <Icon name='ios-chevron-forward' color={"black"} size={30} />
                 </Pressable>
 

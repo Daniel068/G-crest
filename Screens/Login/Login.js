@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, KeyboadAvoidingView, View, Text, TextInput, Pressable,  } from 'react-native';
 
 
-const Login = () => {
+function Login ({navigation}){
     return(
         <ScrollView>
             <KeyboadAvoidingView>
