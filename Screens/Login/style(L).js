@@ -8,15 +8,19 @@ const style = StyleSheet.create({
         alignContent:"center",
         justifyContent:"center",
         padding:10,
-        alignContent:"center"
+        alignItems:"center"
     },
     heroTile:{
         width:319,
         height:533,
-        backgroundColor:rgba(255,255,255,0.8),  
+        backgroundColor:"#fff",  
         borderRadius:10,
         alignSelf:"center",
-        marginTop:200,
+        marginTop:50,
+        justifyContent:"center",
+        marginBottom:50,
+        alignItems:"center",
+        padding:10,
         
     },
     button:{
@@ -28,11 +32,26 @@ const style = StyleSheet.create({
         alignContent:"center",
         alignItems:"center",
         alignSelf:"center",
-        marginTop:70,
+        marginTop:80,
         justifyContent:"center",
+        marginBottom:10
     },
     placeholder:{
-        
+        backgroundColor:'#CEDFD9',
+        width:277,
+        height:52,    
+        marginBottom:30,
+        borderRadius:10,
+        paddingLeft:10
     },
+    text:{
+        fontSize:24,
+        fontWeight:"500",
+        marginBottom:90,
+        textAlign:"center"
+        
+    }
 });
 
+
+export default style;

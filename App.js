@@ -21,7 +21,7 @@ function App() {
     <NavigationContainer >
       <Stack.Navigator>
         <Stack.Screen name='Onboarding' component={OnboardingScreen}  options={{ headershown:false }} />
-        <Stack.Screen name='Login' component={Login}  options={{ headershown:false }} />
+        <Stack.Screen  name= "Login" component = {Login} options ={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
   

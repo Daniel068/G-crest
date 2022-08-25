@@ -1,40 +1,40 @@
 import React from 'react';
-import { ScrollView, KeyboadAvoidingView, View, Text, TextInput, Pressable,  } from 'react-native';
-
+import { ScrollView, KeyboardAvoidingView, View, Text, TextInput, Pressable,  } from 'react-native';
+import style from './style(L)';
 
 function Login ({navigation}){
     return(
-        <ScrollView>
-            <KeyboadAvoidingView>
+        <ScrollView >
+            <KeyboardAvoidingView style={style.mainView} >
 
-                <View>
-                    <Text>
-                        Please enter your details to login
-                    </Text>
+                <View style={style.heroTile}>
+                        <Text style={style.text}>
+                            Please enter your details to login
+                        </Text>
 
-                    <View>
+                        <View>
 
-                        <TextInput placeholder='Enter your email' />
-                        
-                        <TextInput placeholder='Enter password' />
-                        
+                            <TextInput style={style.placeholder} placeholder='Enter your email' />
+                            
+                            <TextInput style={style.placeholder} placeholder='Enter password' />
+                            
+                        </View>
+
+                        <View>
+                            <Pressable style={style.button}>
+                                <Text> Login </Text>
+                            </Pressable>
+                        </View>
+
+                        <Text>
+                            Don't have an account? Sign Up
+                        </Text>
                     </View>
 
-                    <View>
-                        <Pressable>
-                            <Text> Login </Text>
-                        </Pressable>
-                    </View>
-
-                    <Text>
-                        Don't have an account? Sign Up
-                    </Text>
-                </View>
-
-            </KeyboadAvoidingView>
+            </KeyboardAvoidingView>
         </ScrollView>
 
 
-)}
+)};
 
 export default Login;
