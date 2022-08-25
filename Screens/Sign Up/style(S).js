@@ -32,7 +32,7 @@ const style = StyleSheet.create({
         alignContent:"center",
         alignItems:"center",
         alignSelf:"center",
-        marginTop:80,
+        marginTop:30,
         justifyContent:"center",
         marginBottom:10
     },
@@ -47,7 +47,7 @@ const style = StyleSheet.create({
     text:{
         fontSize:24,
         fontWeight:"500",
-        marginBottom:90,
+        marginBottom:40,
         textAlign:"center"
         
     },
