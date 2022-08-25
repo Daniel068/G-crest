@@ -1,14 +1,24 @@
 import React from 'react';
-import {View, Text} from "react-native";
+import {View, Text, ScrollView, KeyboardAvoidingView} from "react-native";
+import style from './style(H)';
 
 
 
-export default function homeScreen () {
+export default function HomeScreen () {
     return(
-        <View>
-            <Text>
-                Hello
-            </Text>
-        </View>
+        <ScrollView>
+            <KeyboardAvoidingView style={style.mainView} >
+           
+            <View style={style.CategoryView} >
+
+                <View style={style.Producttile}></View>
+                <View style={style.Producttile}></View>
+               
+            </View>
+
+            <View></View>
+
+            </KeyboardAvoidingView>
+        </ScrollView>
     )
 };

@@ -25,7 +25,7 @@ function Signup ({navigation}){
                         </View>
 
                         <View>
-                            <Pressable style={style.button}>
+                            <Pressable onPress={()=> navigation.navigate('HomeScreen')} style={style.button}>
                                 <Text style={style.Btntext} > Sign Up </Text>
                             </Pressable>
                         </View>
