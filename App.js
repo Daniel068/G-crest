@@ -15,6 +15,7 @@ const Stack = createNativeStackNavigator();
 
 import OnboardingScreen from './Screens/Onboarding/onboarding';
 import Login from './Screens/Login/Login';
+import Signup from './Screens/Sign Up/signUp';
 
 function App() {
   return(
@@ -22,6 +23,7 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name='Onboarding' component={OnboardingScreen}  options={{ headershown:false }} />
         <Stack.Screen  name= "Login" component = {Login} options ={{headerShown: false}} />
+        <Stack.Screen  name= "Signup" component = {Signup} options ={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
   

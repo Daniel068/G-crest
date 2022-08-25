@@ -2,7 +2,7 @@ import React from 'react';
 import {View, KeyboardAvoidingView, Text, Pressable, ScrollView, StyleSheet } from 'react-native'
 import style from './style(O)';
 import Icon from "react-native-vector-icons/Ionicons";
-import Login from '../Login/Loginscreen';
+
 
 
 

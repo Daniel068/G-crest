@@ -22,13 +22,19 @@ function Login ({navigation}){
 
                         <View>
                             <Pressable style={style.button}>
-                                <Text> Login </Text>
+                                <Text style={style.Btntext} > Login </Text>
                             </Pressable>
                         </View>
 
-                        <Text>
-                            Don't have an account? Sign Up
-                        </Text>
+                        <View style= {{flexDirection:"row"}}>
+                            <Text>
+                                Don't have an account? 
+                            </Text>
+                            <Pressable onPress={()=> navigation.navigate("Signup")}> 
+                                <Text style= {{fontWeight:"bold"}}>Sign Up </Text> 
+                            </Pressable>
+                            
+                        </View>
                     </View>
 
             </KeyboardAvoidingView>

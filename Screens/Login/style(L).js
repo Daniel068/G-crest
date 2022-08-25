@@ -50,6 +50,12 @@ const style = StyleSheet.create({
         marginBottom:90,
         textAlign:"center"
         
+    },
+    Btntext:{
+        fontSize:24,
+        fontWeight:"500",
+        color:"white",
+        textAlign:"center",
     }
 });
 
