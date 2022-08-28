@@ -13,7 +13,7 @@ const style = StyleSheet.create({
     heroTile:{
         width:319,
         height:533,
-        backgroundColor:"#fff",  
+        backgroundColor:"white",  
         borderRadius:10,
         alignSelf:"center",
         marginTop:50,

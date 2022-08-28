@@ -10,17 +10,49 @@ const style = StyleSheet.create({
         padding:10,
         alignItems:"center"
     },
-    Producttile:{
+    Producttile1:{
         width:149,
         height:157,
+        marginRight:10,
+    },
+    Producttile2:{
+        width:149,
+        height:157,
+        marginLeft:10,
     },
     CategoryView:{
         flexDirection:"row",
         alignContent:"center",
         alignSelf:"center",
         alignItems:"center",
+        justifyContent:"center",
+        marginTop:80,
+       
+        
+    },
+    reviewtile:{
+        width:320,
+        height:109,
+        alignSelf:"center",
         justifyContent:"space-evenly",
+        backgroundColor:"rgba(217,217,217, 0.5)",
+        borderRadius:10,
+        marginTop:80,
+    },
+    heroText:{
 
+    },
+    backgroundView:{
+        alignSelf:"baseline",
+        width:149,
+        height:45,
+        backgroundColor:'rgba(255,255,255,0.5)',
+        alignContent:"flex-end",
+        justifyContent:"center",
+        alignItems:"center",
+        borderTopEndRadius:10,
+        borderTopStartRadius:10,
+        marginTop:112,
     }
 
 })

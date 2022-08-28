@@ -6,17 +6,16 @@ const style = StyleSheet.create({
         backgroundColor:"#8bebc8",
         flexDirection:"column",
         alignContent:"center",
-        justifyContent:"center",
-        padding:10,
+        justifyContent:"center",    
         alignContent:"center"
     },
     heroTile:{
         width:320,
         height:277,
-        backgroundColor:"#ffffff",  
+        backgroundColor:"rgba(255,255,255, 0.8)",  
         borderRadius:10,
         alignSelf:"center",
-        marginTop:200,
+        marginTop:250,
         
     },
     text:{
