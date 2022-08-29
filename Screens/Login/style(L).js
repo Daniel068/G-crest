@@ -16,7 +16,7 @@ const style = StyleSheet.create({
         backgroundColor:"white",  
         borderRadius:10,
         alignSelf:"center",
-        marginTop:50,
+        marginTop:30,
         justifyContent:"center",
         marginBottom:50,
         alignItems:"center",
@@ -56,6 +56,22 @@ const style = StyleSheet.create({
         fontWeight:"500",
         color:"white",
         textAlign:"center",
+    },
+    iconView:{
+        flexDirection:"row",
+        height:45,
+        width:75,
+        backgroundColor:"white",
+        borderRadius:10,
+        alignSelf:"flex-start",
+        justifyContent:"center",
+        alignContent:"center",
+        alignItems:"center",
+        marginTop:5,
+        
+    },
+    icon:{
+
     }
 });
 

@@ -7,18 +7,18 @@ const style = StyleSheet.create({
         flexDirection:"column",
         alignContent:"center",
         justifyContent:"center",
-        padding:10,
+        
         alignItems:"center"
     },
     Producttile1:{
         width:149,
         height:157,
-        marginRight:10,
+        marginRight:20,
     },
     Producttile2:{
         width:149,
         height:157,
-        marginLeft:10,
+        marginLeft:20,
     },
     CategoryView:{
         flexDirection:"row",
@@ -26,7 +26,7 @@ const style = StyleSheet.create({
         alignSelf:"center",
         alignItems:"center",
         justifyContent:"center",
-        marginTop:80,
+        marginTop:30,
        
         
     },
@@ -37,7 +37,7 @@ const style = StyleSheet.create({
         justifyContent:"space-evenly",
         backgroundColor:"rgba(217,217,217, 0.5)",
         borderRadius:10,
-        marginTop:80,
+        marginTop:20,
     },
     heroText:{
 

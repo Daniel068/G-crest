@@ -1,11 +1,17 @@
 import React from 'react';
 import { ScrollView, KeyboardAvoidingView, View, Text, TextInput, Pressable, StyleSheet  } from 'react-native';
 import style from './style(S)';
+import Icon  from 'react-native-vector-icons/Ionicons';
 
 function Signup ({navigation}){
     return(
         <ScrollView >
             <KeyboardAvoidingView style={style.mainView} >
+                <View style={style.iconView}>
+                    <Pressable onPress={() => navigation.goBack('')} >
+                        <Icon name='arrow-back-sharp' color={"black"} size={30} />
+                    </Pressable>
+                </View>
 
                 <View style={style.heroTile} >
                         <Text style={style.text}>
