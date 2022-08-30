@@ -13,13 +13,13 @@ const images = [
 
 
 
-export default function HomeScreen () {
+export default function HomeScreen ({Navigation}) {
    
     return(
        
             <KeyboardAvoidingView style={style.mainView} >
 
-                <View style={{flex:.666, marginBottom:10,}}>
+                <View style={{flex:.79, marginBottom:10,}}>
                     <BackgroundCarousel images={images} />
                 </View>
 

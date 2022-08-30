@@ -13,14 +13,14 @@ const style = StyleSheet.create({
     Producttile1:{
         width:149,
         height:157,
-        marginRight:30,
+        marginRight:20,
         borderTopLeftRadius:10,
         borderTopRightRadius:10,
     },
     Producttile2:{
         width:149,
         height:157,
-        marginLeft:30,
+        marginLeft:20,
         borderTopLeftRadius:10,
         borderTopRightRadius:10,
     },
@@ -30,12 +30,12 @@ const style = StyleSheet.create({
         alignSelf:"center",
         alignItems:"center",
         justifyContent:"center",
-        marginTop:10,
+        marginTop:30,
        
         
     },
     reviewtile:{
-        width:375,
+        width:320,
         height:109,
         alignSelf:"center",
         justifyContent:"space-evenly",
@@ -50,7 +50,7 @@ const style = StyleSheet.create({
         alignSelf:"baseline",
         width:149,
         height:45,
-        backgroundColor:'rgba(255,255,255,0.5)',
+        backgroundColor:'rgba(255,255,255,0.6)',
         alignContent:"flex-end",
         justifyContent:"center",
         alignItems:"center",
