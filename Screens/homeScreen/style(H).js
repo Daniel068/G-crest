@@ -31,6 +31,7 @@ const style = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center",
         marginTop:10,
+        marginBottom:10,
        
         
     },
@@ -41,7 +42,7 @@ const style = StyleSheet.create({
         justifyContent:"space-evenly",
         backgroundColor:"rgba(217,217,217, 0.5)",
         borderRadius:10,
-        marginTop:20,
+        marginTop:10,
     },
     heroText:{
 

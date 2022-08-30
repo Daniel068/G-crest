@@ -23,7 +23,7 @@ export default function HomeScreen ({Navigation}) {
                     <BackgroundCarousel images={images} />
                 </View>
 
-                <Text>Category</Text>
+                <View style={{justifyContent:"center", alignSelf:"flex-start", marginLeft:22}}><Text>Category</Text></View>
                 <View style ={style.CategoryView}>
                     <ImageBackground 
                     style={style.Producttile1}
@@ -45,7 +45,7 @@ export default function HomeScreen ({Navigation}) {
 
                 </View>
 
-                <Text>Reviews</Text>
+                <View style={{justifyContent:"center", alignSelf:"flex-start", marginLeft:22}}><Text>Reviews</Text></View>
 
                 <View style={style.reviewtile} >
 
