@@ -16,10 +16,11 @@ const images = [
 export default function HomeScreen ({Navigation}) {
    
     return(
-       
-            <KeyboardAvoidingView style={style.mainView} >
+        <KeyboardAvoidingView style={style.mainView} >
+            <ScrollView>
+            
 
-                <View style={{flex:.79, marginBottom:10,}}>
+                <View style={{flex:.64, marginBottom:10,}}>
                     <BackgroundCarousel images={images} />
                 </View>
 
@@ -49,9 +50,8 @@ export default function HomeScreen ({Navigation}) {
 
                 <View style={style.reviewtile} >
 
-                </View>
-
-            </KeyboardAvoidingView>
-        
+                </View>          
+            </ScrollView>
+        </KeyboardAvoidingView>
     )
 };
