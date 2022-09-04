@@ -30,7 +30,8 @@ const style = StyleSheet.create({
         alignSelf:"center",
         alignItems:"center",
         justifyContent:"center",
-        marginTop:30,
+        marginTop:15,
+        marginBottom:15,
        
         
     },
@@ -57,7 +58,29 @@ const style = StyleSheet.create({
         borderTopEndRadius:10,
         borderTopStartRadius:10,
         marginTop:112,
-    }
+    },
+    iconView:{
+        flexDirection:"row",
+        height:45,
+        width:75,
+        backgroundColor:"white",
+        borderRadius:10,
+        alignSelf:"flex-start",
+        justifyContent:"center",
+        alignContent:"center",
+        alignItems:"center",
+        marginTop:10,
+        marginBottom:10,
+        
+    },
+    placeholder:{
+        backgroundColor:'#CEDFD9',
+        width:345,
+        height:52,    
+        marginBottom:10,
+        borderRadius:10,
+        paddingLeft:10
+    },
 
 })
 

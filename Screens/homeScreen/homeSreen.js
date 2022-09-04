@@ -20,7 +20,7 @@ export default function HomeScreen ({Navigation}) {
             <ScrollView>
             
 
-                <View style={{flex:.55, marginBottom:10,}}>
+                <View style={{flex:.8, marginBottom:10,}}>
                     <BackgroundCarousel images={images} />
                 </View>
 
