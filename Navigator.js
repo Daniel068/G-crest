@@ -10,6 +10,7 @@ const Stack = createNativeStackNavigator();
 
 import HomeScreen from './Screens/homeScreen/homeSreen';
 import Category from './Screens/Category Page/Category';
+import SubCategory from './Screens/subCatergory/subCategory';
 import { Image, Text, View } from 'react-native';
 
 function HomescreenStack (){
@@ -27,11 +28,19 @@ function CategoryStack (){
     )
 };
 
+function SubCategoryStack (){
+    return(
+        <Stack.Navigator>
+            <Stack.Screen  name= "SubCategory" component = {SubCategory} options ={{headerShown: false}} />
+        </Stack.Navigator>
+    )
+};
 function TabNavigation() {
     return(
         <Tab.Navigator  
 
         screenOptions={{
+            
             tabBarStyle:{
                 backgroundColor:'#3ebe2d',
                 height:60,
@@ -41,6 +50,7 @@ function TabNavigation() {
                 left:20,
                 right: 20,
                 elevation:10,
+                
                  
             },
             tabBarLabelStyle:{

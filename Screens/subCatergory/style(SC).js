@@ -11,54 +11,31 @@ const style = StyleSheet.create({
         alignItems:"center"
     },
     Producttile1:{
-        width:149,
+        width:350,
         height:157,
-        marginRight:20,
-        borderTopLeftRadius:10,
-        borderTopRightRadius:10,
-    },
-    Producttile2:{
-        width:149,
-        height:157,
-        marginLeft:20,
-        borderTopLeftRadius:10,
-        borderTopRightRadius:10,
-    },
-    CategoryView:{
-        flexDirection:"row",
-        alignContent:"center",
-        alignSelf:"center",
-        alignItems:"center",
-        justifyContent:"center",
-        marginTop:15,
-        marginBottom:15,
-       
-        
-    },
-    reviewtile:{
-        width:320,
-        height:109,
-        alignSelf:"center",
-        justifyContent:"space-evenly",
-        backgroundColor:"rgba(217,217,217, 0.5)",
         borderRadius:10,
-        marginTop:20,
-    },
-    heroText:{
+        backgroundColor:"rgba(217,217,217, 1)",
+        flexDirection:"row",
+        marginTop:15,
+        alignItems:"center",
+        justifyContent:"space-evenly",
 
     },
-    backgroundView:{
-    
-        width:149,
-        height:45,
-        backgroundColor:'rgba(255,255,255,0.6)',
-        alignContent:"flex-end",
-        justifyContent:"center",
-        alignItems:"center",
-        borderTopEndRadius:10,
-        borderTopStartRadius:10,
-        marginTop:112,
+ 
+    Addtocart:{
+       width:108,
+       height: 54,
+       backgroundColor:"rgba(228, 212, 38, 1)",
+       elevation:10,
+       borderRadius:10,
+       alignContent:"center",
+       justifyContent:"center",
+       alignItems:"center",
+       marginTop:15,
+       marginLeft:17,
+
     },
+
     iconView:{
         flexDirection:"row",
         height:45,
@@ -70,8 +47,8 @@ const style = StyleSheet.create({
         alignContent:"center",
         alignItems:"center",
         marginTop:10,
-        marginBottom:10,
-        marginLeft:10
+        marginBottom:15,
+        marginLeft:10,
 
         
     },

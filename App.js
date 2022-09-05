@@ -19,6 +19,7 @@ import Signup from './Screens/Sign Up/signUp';
 import HomeScreen from './Screens/homeScreen/homeSreen';
 import TabNavigation from './Navigator';
 import Category from './Screens/Category Page/Category';
+import SubCategory from './Screens/subCatergory/subCategory';
 
 function App() {
   return(
@@ -29,6 +30,7 @@ function App() {
         <Stack.Screen  name= "Signup" component = {Signup} options ={{headerShown: false}} />
         <Stack.Screen  name= "HomeScreen" component = {TabNavigation} options ={{headerShown: false}} />
         <Stack.Screen  name= "Category" component = {TabNavigation} options ={{headerShown: false}} />
+        <Stack.Screen  name= "Subcategory" component = {SubCategory} options ={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
   
