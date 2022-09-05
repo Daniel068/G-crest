@@ -8,12 +8,16 @@ function SubCategory({navigation}) {
     return(
        
             <KeyboardAvoidingView style={style.mainView}>
-
+                <View style={{flexDirection:"row"}}>
                     <View style={style.iconView} >
                         <Pressable  onPress={() => navigation.goBack("")} >
                             <Icon name='arrow-back-sharp' color={"black"} size={30} />
                         </Pressable>                   
                     </View>
+                    <View style={style.CategoryTextView}>
+                        <Text style={{fontWeight:"400", fontSize:24, lineHeight:32.4}}> Fruit Parfait</Text>
+                    </View>
+                </View>
 
                  <ScrollView>
 

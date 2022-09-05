@@ -48,9 +48,22 @@ const style = StyleSheet.create({
         alignItems:"center",
         marginTop:10,
         marginBottom:15,
-        marginLeft:10,
+        marginRight:35,
 
         
+    },
+    CategoryTextView:{
+        height:45,
+        width:217,
+        backgroundColor:"rgba(217, 217, 217, 0.3)",
+        borderRadius:10,
+        justifyContent:"center",
+        alignContent:"center",
+        alignItems:"center",
+        marginTop:10,
+        marginBottom:15,
+        marginLeft:10,
+
     },
     placeholder:{
         backgroundColor:'#CEDFD9',
