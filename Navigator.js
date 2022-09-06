@@ -44,11 +44,8 @@ function TabNavigation() {
             tabBarStyle:{
                 backgroundColor:'#3ebe2d',
                 height:60,
-                borderRadius:10,
-                position: 'absolute',
-                bottom: 15,
-                left:20,
-                right: 20,
+                borderTopEndRadius:10,
+                borderTopStartRadius:10,            
                 elevation:10,
                 
                  

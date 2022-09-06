@@ -8,6 +8,7 @@ function SubCategory({navigation}) {
     return(
        
             <KeyboardAvoidingView style={style.mainView}>
+
                 <View style={{flexDirection:"row"}}>
                     <View style={style.iconView} >
                         <Pressable  onPress={() => navigation.goBack("")} >
@@ -22,22 +23,27 @@ function SubCategory({navigation}) {
                  <ScrollView>
 
                    
-
+                <Pressable>
                     <View style={style.searchContainer}>
                         <Icon style={style.searchIcon} name='md-search-outline' color={"black"} size={30} />
                         <TextInput placeholder="Search Product" style={style.placeholder} />
                         <Icon style={style.searchIcon} name='ios-mic' color={"black"} size={30} />
                     </View>
+                </Pressable>
 
                     <View style={{flexDirection:"column"}}>
+                        
                         <View style={style.Producttile1}>
-                            
-                                <Image 
-                                    source={{uri:'https://images.unsplash.com/photo-1615522894493-2f3e3fda615c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFyZmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60'}}
-                                    resizeMode="contain"
-                                    style={{width:85, height:115, borderRadius:10}}
-                                />
-
+                            <Pressable onPress={()=>navigation.navigate('Product')}>
+                                <View>                                
+                                    <Image 
+                                        source={{uri:'https://images.unsplash.com/photo-1615522894493-2f3e3fda615c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFyZmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60'}}
+                                        resizeMode="contain"
+                                        style={{width:85, height:115, borderRadius:10}}
+                                        
+                                    />
+                                </View>
+                            </Pressable>
                             <View>
                                 <Text style={{marginBottom:10, fontWeight:"400"}}>Banana & Strawberry Mix</Text>
                                 <Text style={{marginLeft:60, fontWeight:"400"}}>$15</Text>

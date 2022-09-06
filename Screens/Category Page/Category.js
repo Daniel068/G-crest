@@ -8,12 +8,11 @@ function Category({navigation}) {
     return(
        
             <KeyboardAvoidingView style={style.mainView}>
-
-                    <View style={style.iconView} onPress={() => navigation.goBack("")} >
-                        <Pressable >
-                            <Icon name='arrow-back-sharp' color={"black"} size={30} />
-                        </Pressable>                   
-                    </View>
+                     <Pressable style={style.iconView} onPress={() => navigation.goBack("")}>
+                        <View >
+                            <Icon name='arrow-back-sharp' color={"black"} size={30} />               
+                        </View>
+                    </Pressable>  
 
                  <ScrollView>
 
@@ -28,29 +27,32 @@ function Category({navigation}) {
                     <View style={{flexDirection:"column"}}>
                         <View style ={style.CategoryView}>
                             <Pressable onPress={() => navigation.navigate('Subcategory')}>
-                            <ImageBackground 
-                            style={style.Producttile1}
-                            resizeMode="cover"
-                            source={{uri: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c21vb3RoaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'}} >
-                                <View style={style.backgroundView} >
-                                    <Text style={{fontSize:15, fontWeight:"600", lineHeight:27}}>Smoothies</Text>
-                                </View>
+                                <ImageBackground 
+                                style={style.Producttile1}
+                                resizeMode="cover"
+                                source={{uri: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c21vb3RoaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'}} >
+                                    <View style={style.backgroundView} >
+                                        <Text style={{fontSize:15, fontWeight:"600", lineHeight:27}}>Smoothies</Text>
+                                    </View>
 
-                            </ImageBackground>
+                                </ImageBackground>
                             </Pressable>
-                            <ImageBackground 
-                            style={style.Producttile2}
-                            resizeMode="cover"
-                            source={{uri: 'https://images.unsplash.com/photo-1490371475955-4cb3bfc72f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZydWl0JTIwcGFyZmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'}} >
-                                <View style={style.backgroundView} >
-                                    <Text style={{fontSize:15, fontWeight:"600", lineHeight:27}}>Fruit Parfait</Text>
-                                </View>
 
-                            </ImageBackground>
+                            <Pressable onPress={() => navigation.navigate('Subcategory')}>
+                                <ImageBackground 
+                                style={style.Producttile2}
+                                resizeMode="cover"
+                                source={{uri: 'https://images.unsplash.com/photo-1490371475955-4cb3bfc72f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZydWl0JTIwcGFyZmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'}} >
+                                    <View style={style.backgroundView} >
+                                        <Text style={{fontSize:15, fontWeight:"600", lineHeight:27}}>Fruit Parfait</Text>
+                                    </View>
 
+                                </ImageBackground>
+                            </Pressable>
                         </View>
 
                         <View style ={style.CategoryView}>
+                            <Pressable onPress={() => navigation.navigate('Subcategory')}>
                             <ImageBackground 
                             style={style.Producttile1}
                             resizeMode="cover"
@@ -60,6 +62,8 @@ function Category({navigation}) {
                                 </View>
 
                             </ImageBackground>
+                            </Pressable>
+                            <Pressable onPress={() => navigation.navigate('Subcategory')}>
                             <ImageBackground 
                             style={style.Producttile2}
                             resizeMode="cover"
@@ -69,29 +73,32 @@ function Category({navigation}) {
                                 </View>
 
                             </ImageBackground>
-
+                            </Pressable>
                         </View>
 
                         <View style ={style.CategoryView}>
-                            <ImageBackground 
-                            style={style.Producttile1}
-                            resizeMode="cover"
-                            source={{uri:'https://images.unsplash.com/photo-1566823422707-7813dab8eca9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGRyaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'}} >
-                                <View style={style.backgroundView}>
-                                    <Text>Zobo Drink</Text>
-                                </View>
+                            <Pressable onPress={() => navigation.navigate('Subcategory')}>
+                                <ImageBackground 
+                                style={style.Producttile1}
+                                resizeMode="cover"
+                                source={{uri:'https://images.unsplash.com/photo-1566823422707-7813dab8eca9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGRyaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'}} >
+                                    <View style={style.backgroundView}>
+                                        <Text>Zobo Drink</Text>
+                                    </View>
+                                </ImageBackground>
+                            </Pressable>
 
-                            </ImageBackground>
-                            <ImageBackground 
-                            style={style.Producttile2}
-                            resizeMode="cover"
-                            source={{uri:'https://images.unsplash.com/photo-1563208276-13fee6108415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'}} >
-                                <View style={style.backgroundView}>
-                                    <Text style={{fontSize:15, fontWeight:"600", lineHeight:27}}>Fruit Salad</Text>
-                                </View>
+                            <Pressable onPress={() => navigation.navigate('Subcategory')}>
+                                <ImageBackground 
+                                style={style.Producttile2}
+                                resizeMode="cover"
+                                source={{uri:'https://images.unsplash.com/photo-1563208276-13fee6108415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'}} >
+                                    <View style={style.backgroundView}>
+                                        <Text style={{fontSize:15, fontWeight:"600", lineHeight:27}}>Fruit Salad</Text>
+                                    </View>
 
-                            </ImageBackground>
-
+                                </ImageBackground>
+                            </Pressable>
                         </View>
                     </View>
                 </ScrollView>

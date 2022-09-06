@@ -48,7 +48,7 @@ const style = StyleSheet.create({
         alignItems:"center",
         marginTop:10,
         marginBottom:15,
-        marginRight:35,
+        marginRight:40,
 
         
     },
