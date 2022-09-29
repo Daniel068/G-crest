@@ -26,7 +26,7 @@ function Category({navigation}) {
 
                     <View style={{flexDirection:"column"}}>
                         <View style ={style.CategoryView}>
-                            <Pressable onPress={() => navigation.navigate('Subcategory')}>
+                            <Pressable onPress={() => navigation.navigate('Cart')}>
                                 <ImageBackground 
                                 style={style.Producttile1}
                                 resizeMode="cover"

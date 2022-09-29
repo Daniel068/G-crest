@@ -8,12 +8,7 @@ function Login ({navigation}){
         <ScrollView >
             <KeyboardAvoidingView style={style.mainView} >
                 
-                    <Pressable onPress={() => navigation.goBack("")} style={style.iconView}>
-                        <View>
-                             <Icon name='arrow-back-sharp' color={"black"} size={30} />
-                        </View>                   
-                    </Pressable>
-                
+                    
 
 
                 <View style={style.heroTile}>
