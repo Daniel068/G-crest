@@ -28,8 +28,12 @@ export default function Basket(props) {
                 
               </View>
               </Pressable>
+
               <Pressable onPress={()=>onRemove(item)}
-              style={style.quantityButton}><Text style={style.QuantityText}> - </Text></Pressable>
+              style={style.quantityButton}>
+                <Text style={style.QuantityText}> - </Text>
+              </Pressable>
+
             </View>
             <View>
               <Text style={style.Text} >{item.qty} x NGN {item.price.toFixed(2)}</Text>
