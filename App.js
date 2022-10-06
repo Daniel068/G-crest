@@ -52,9 +52,8 @@ function App() {
         <Stack.Screen  name= "Login" component = {Login} options ={{headerShown: false}} />
         <Stack.Screen  name= "Signup" component = {Signup} options ={{headerShown: false}} />
         <Stack.Screen  name= "HomeScreen" component = {TabNavigation} options ={{headerShown: false}} />
-        <Stack.Screen  name= "Category" component = {TabNavigation} options ={{headerShown: false}} />
-        <Stack.Screen  name= "Cart" component = {Cart} options ={{headerShown: false}} onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
-    
+        <Stack.Screen  name= "Cart" component = {TabNavigation} options ={{headerShown: false}} onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
+        <Stack.Screen  name= "Basket" component = {Basket} options ={{headerShown: false}} onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
     
       </Stack.Navigator>
     </NavigationContainer>

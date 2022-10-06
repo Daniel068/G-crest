@@ -7,7 +7,9 @@ import style from "./style(C)";
 function Category({navigation}) {
     return(
        
-            <KeyboardAvoidingView style={style.mainView}>
+            <KeyboardAvoidingView style={style.mainView}
+            behavior = 'padding'
+            >
                      <Pressable style={style.iconView} onPress={() => navigation.goBack("")}>
                         <View >
                             <Icon name='arrow-back-sharp' color={"black"} size={30} />               

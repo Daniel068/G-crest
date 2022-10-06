@@ -6,15 +6,17 @@ export default function Product(props) {
   const {product, onAdd} = props
 return (
   
-  <View style={{flexDirection:'row', alignItems:'center', padding:10}}>
-      <Image 
-      source={{uri:product.image}}
-      style={{width:90, height:120, borderRadius:10}}
-      resizeMode='cover'
-      />
-    <View style={{flexDirection:'column',alignContent:'center', alignItems:'center',padding:10}}>
+  <View style={style.MainView}>
+     <View style={style.ImageView}>
+        <Image 
+        source={{uri:product.image}}
+        style={{width:90, height:120, borderRadius:10}}
+        resizeMode='center'
+        />
+     </View>
+    <View style={{flexDirection:'column',alignContent:'center', alignItems:'center',padding:5, marginLeft:90}}>
       <Text style={style.nameText}>{product.name}</Text>
-      <Text>{product.ingredient}</Text>
+      <Text style={style.ingredientText} >{product.ingredient}</Text>
       <View><Text style={style.PriceText}>NGN{product.price}</Text></View>
 
       <View style={style.button}>

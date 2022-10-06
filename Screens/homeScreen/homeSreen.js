@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, ScrollView, KeyboardAvoidingView, ImageBackground, StatusBar,Image} from "react-native";
+import {View, Text, ScrollView, KeyboardAvoidingView, ImageBackground, StatusBar,Image, Pressable} from "react-native";
 import style from './style(H)';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
@@ -13,7 +13,7 @@ const images = [
 
 
 
-export default function HomeScreen ({Navigation}) {
+export default function HomeScreen ({navigation}) {
    
     return(
         <KeyboardAvoidingView style={style.mainView} >
@@ -24,25 +24,34 @@ export default function HomeScreen ({Navigation}) {
                     <BackgroundCarousel images={images} />
                 </View>
 
-                <View style={{justifyContent:"center", alignSelf:"flex-start", marginLeft:22}}><Text>Category</Text></View>
+                
+
+                <View style={{justifyContent:"center", alignSelf:"flex-start", marginLeft:22}}>
+                    <Text>Best Selling Product</Text>
+                </View>
                 <View style ={style.CategoryView}>
-                    <ImageBackground 
-                    style={style.Producttile1}
-                    resizeMode="cover"
-                    source={require('../homeScreen/Smoothies.jpg')} >
-                        <View style={style.backgroundView}>
-                            <Text>Smoothies</Text>
-                        </View>
+                    <Pressable onPress={() => navigation.navigate('Cart')}>
+                        <ImageBackground 
+                        style={style.Producttile1}
+                        resizeMode="cover"
+                        source={{uri:'https://images.unsplash.com/photo-1610970881699-44a5587cabec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c21vb3RoaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'}} >
+                            <View style={style.backgroundView}>
+                                <Text>Smoothie</Text>
+                            </View>
 
-                    </ImageBackground>
-                    <ImageBackground 
-                    style={style.Producttile2}
-                    source={require('../homeScreen/Smoothies.jpg')} >
-                        <View style={style.backgroundView}>
-                            <Text>Smoothies</Text>
-                        </View>
+                        </ImageBackground>
+                    </Pressable>
 
-                    </ImageBackground>
+                    <Pressable>
+                        <ImageBackground 
+                        style={style.Producttile2}
+                        source={{uri:'https://images.unsplash.com/photo-1563208276-13fee6108415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'}} >
+                            <View style={style.backgroundView}>
+                                <Text>Fruit Salad</Text>
+                            </View>
+
+                        </ImageBackground>
+                    </Pressable>
 
                 </View>
 

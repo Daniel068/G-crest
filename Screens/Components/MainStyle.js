@@ -2,22 +2,22 @@ import { StyleSheet } from "react-native";
 
 const style= StyleSheet.create({
     MainView:{
-        flex:4,
+        flex:1,
         flexDirection:"column",
-        backgroundColor:"purple",
+        backgroundColor:"",
         borderRadius:10,
         alignContent:'center',
         justifyContent:'center',
         alignItems:"center",
-        padding:10,
+        padding:5,
     },
     TextProduct:{
         fontSize:20,
         fontWeight:"bold",
         textAlign:"center",
-        color:'white',
+        color:'black',
         position:'absolute',
-        top:10,
+        top:-1,
     }
 })
 

@@ -1,29 +1,38 @@
-import { View, Text, ScrollView, Pressable } from 'react-native'
+import { View, Text, ScrollView, Pressable, StyleSheet } from 'react-native'
 import React from 'react'
 
 export default function Basket(props) {
   const {cartItems, onAdd, onRemove} = props;
   const itemsPrice = cartItems.reduce((a,c) => a + c.price * c.qty, 0);
-  const taxPrice = itemsPrice * 0.14;
   const shippingPrice = itemsPrice > 2000 ? 0 : 50;
-  const totalPrice = itemsPrice + taxPrice + shippingPrice;
+  const totalPrice = itemsPrice + shippingPrice;
+  
   return (
-    <ScrollView style={{flexDirection:'column',backgroundColor:'pink',marginLeft:5,}}>
+    <ScrollView style={style.BasketView}>
         <View style={{}}>
-          <Text>Cart Items</Text> 
+          <Text style={style.Text}>Cart Items</Text> 
         </View>
+        <View style={{width:200,height:1,backgroundColor:'black'}}></View> 
         <View>
-          {cartItems.length === 0 && <View><Text>Cart is Empty</Text></View>}
+          {cartItems.length === 0 && <View><Text style={style.Text}>Cart is Empty</Text></View>}
         
          {cartItems.map((item)=>(
           <View key={item.id} style={{flexDirection:'row'}}>
-            <View><Text>{item.name}</Text></View>
+            <View><Text style={style.Text}>{item.name}</Text></View>
             <View style={{flexDirection:'row'}}>
-              <Pressable onPress={()=>onAdd(item)}><Text> + </Text></Pressable>
-              <Pressable onPress={()=>onRemove(item)}><Text> - </Text></Pressable>
+
+            <Pressable onPress={()=>onAdd(item)}>
+              <View style={style.quantityButton}>
+               
+                  <Text style={style.Text}> + </Text>
+                
+              </View>
+              </Pressable>
+              <Pressable onPress={()=>onRemove(item)}
+              style={style.quantityButton}><Text style={style.QuantityText}> - </Text></Pressable>
             </View>
             <View>
-              <Text>{item.qty} x NGN {item.price.toFixed(2)}</Text>
+              <Text style={style.Text} >{item.qty} x NGN {item.price.toFixed(2)}</Text>
             </View>
           </View>
          ))}
@@ -31,42 +40,35 @@ export default function Basket(props) {
          {cartItems.length !== 0 && (
           
           <View>
-            <View style={{width:130,height:2,backgroundColor:'black'}}></View>
+            <View style={{width:200,height:1,backgroundColor:'black'}}></View>
            <View style={{flexDirection:"row"}}>
               <View>
-                <Text>Items Price</Text>
+                <Text style={style.Text}>Items Price:</Text>
               </View>
               <View>
-                <Text> NGN {itemsPrice.toFixed(2)} </Text>
-              </View>
-            </View>
-
-            <View style={{flexDirection:"row"}}>
-              <View>
-                <Text>Tax Price</Text>
-              </View>
-              <View>
-                <Text> NGN {taxPrice.toFixed(2)} </Text>
+                <Text style={style.Text}> NGN {itemsPrice.toFixed(2)} </Text>
               </View>
             </View>
 
+           
+
             <View style={{flexDirection:"row"}}>
               <View>
-                <Text>Shipping Price</Text>
+                <Text style={style.Text}>Shipping Price:</Text>
               </View>
               <View> 
-                <Text>{shippingPrice.toFixed(2)}</Text>
+                <Text style={style.Text}>{shippingPrice.toFixed(2)}</Text>
               </View>
             </View>
             {/* for the horizontal line */} 
-            <View style={{width:130,height:2,backgroundColor:'black'}}></View> 
+            <View style={{width:200,height:2,backgroundColor:'black'}}></View> 
 
             <View style={{flexDirection:"row"}}>
               <View>
-                <Text style={{fontWeight:'bold'}}>Total Price</Text>
+                <Text style={{fontWeight:'bold', fontSize:15}}>Total Price:</Text>
               </View>
               <View> 
-                <Text style={{fontWeight:'bold'}}> NGN {totalPrice.toFixed(2)}</Text>
+                <Text style={{fontWeight:'bold', fontSize:15}}> NGN {totalPrice.toFixed(2)}</Text>
               </View>
             </View>
 
@@ -82,3 +84,47 @@ export default function Basket(props) {
     
   )
 }
+
+const style = StyleSheet.create({
+  Text:{
+    color:'white',
+    fontWeight:'600'
+  },
+  QuantityText:{
+    color:'white',
+    fontWeight:'600',
+    alignSelf:"center",
+    justifyContent:'center',
+    alignItems:"center",
+    alignContent:'center',
+    marginBottom:1
+  },
+  subText:{
+    color:'white',
+    fontWeight:'600'
+  },
+  BasketView:{
+    flexDirection:'column',
+    backgroundColor:'#F1198B',
+    marginLeft:5,
+    borderRadius:10,
+    borderWidth:1,
+    borderColor:'black',
+    padding:5
+  },
+  quantityButton:{
+    height:15,
+    width:15,
+    borderRadius:4,
+    backgroundColor:'black',
+    alignContent:'center',
+    justifyContent:'center',
+    alignItems:'center',
+    alignSelf:"center",
+    marginTop:5,
+    marginLeft:7,
+    marginBottom:5,
+    
+  }
+  
+})

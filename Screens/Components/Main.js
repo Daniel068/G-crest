@@ -10,7 +10,7 @@ export default function Main(props) {
     <ScrollView>
       <View style={style.MainView}>
         <Text style={style.TextProduct}>Products</Text>
-        <View style={{flexDirection:'column', justifyContent:'space-evenly', marginTop: 25}}>
+        <View style={{flexDirection:'column', justifyContent:'space-evenly', marginTop: 15}}>
           {products.map((product)=>(
             <Product key={product.id} product ={product} onAdd={onAdd}>
               

@@ -11,6 +11,7 @@ const Stack = createNativeStackNavigator();
 import HomeScreen from './Screens/homeScreen/homeSreen';
 import Category from './Screens/Category Page/Category';
 import { Image, Text, View } from 'react-native';
+import Cart from './Screens/Cart/Cart';
 
 function HomescreenStack (){
     return(
@@ -19,10 +20,10 @@ function HomescreenStack (){
         </Stack.Navigator>
     )
 };
-function CategoryStack (){
+function CartStark (){
     return(
         <Stack.Navigator>
-            <Stack.Screen  name= "Category" component = {Category} options ={{headerShown: false}} />
+            <Stack.Screen  name= "Cart" component = {Cart} options ={{headerShown: false}} />
         </Stack.Navigator>
     )
 };
@@ -36,7 +37,7 @@ function TabNavigation() {
         screenOptions={{
             
             tabBarStyle:{
-                backgroundColor:'#3ebe2d',
+                backgroundColor:'#03E05B',
                 height:60,
                 borderTopEndRadius:10,
                 borderTopStartRadius:10,            
@@ -66,7 +67,7 @@ function TabNavigation() {
                         style={{
                             width:25,
                             height:25,
-                            tintColor: focused? "#e4d426" : "black"
+                            tintColor: focused? "#EBD300" : "black"
                         }}
                     />
                
@@ -78,16 +79,16 @@ function TabNavigation() {
             />
 
             <Tab.Screen 
-            name= "Search" component = {CategoryStack} options ={{headerShown: false,
+            name= "Product" component = {CartStark} options ={{headerShown: false,
                 tabBarIcon:({focused}) =>(
                     <View>
                          <Image
-                             source={{uri:"https://cdn-icons-png.flaticon.com/128/2330/2330104.png"}}
+                             source={{uri:"https://cdn-icons-png.flaticon.com/128/3144/3144456.png"}}
                              resizeMode='contain'
                              style={{
                                  width:25,
                                  height:25,
-                                 tintColor: focused? "#e4d426" : "black"
+                                 tintColor: focused? "#F5F43D" : "black"
                              }}
                          />
                     
